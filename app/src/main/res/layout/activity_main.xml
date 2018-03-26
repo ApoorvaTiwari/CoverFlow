@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E211E"
+    tools:context="com.example.apoorva.coverflow.MainActivity">
+
+   <it.moondroid.coverflow.components.ui.containers.FeatureCoverFlow
+       android:id="@+id/coveFlow"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       app:coverHeight="200dp"
+       app:coverWidth="140dp"
+       app:maxScaleFactor="1.5"
+       app:reflectionGap="0px"
+       app:rotationThreshold="0.5"
+       app:scalingThreshold="0.5"
+       app:spacing="0.6"/>
+
+    <TextSwitcher
+        android:id="@+id/title"
+        android:paddingBottom="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextSwitcher>
+
+    <View
+        android:id="@+id/background_view"
+        android:background="@android:color/background_dark"
+        android:alpha="0"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <com.mahfa.dnswitch.DayNightSwitch
+        android:id="@+id/dayNight"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+</RelativeLayout>
